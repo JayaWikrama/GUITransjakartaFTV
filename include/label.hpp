@@ -23,7 +23,7 @@ public:
     void setText(const std::string &text, bool trigShow = false) const;
     void setText(const QString &text, bool trigShow = false) const;
     void setRupiah(unsigned int value, const std::string &prefix = "", bool trigShow = false) const;
-    void setPAN(unsigned int value, const std::string &prefix = "", bool trigShow = false) const;
+    void setPAN(unsigned long long value, const std::string &prefix = "", bool trigShow = false) const;
 };
 
 #endif

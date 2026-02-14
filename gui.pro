@@ -27,14 +27,18 @@ SOURCES += \
         src/mainwindow.cpp \
         src/label.cpp \
         src/transaction-counter.cpp \
-        src/transaction-pending-summary.cpp
+        src/transaction-pending-summary.cpp \
+    src/message.cpp \
+    src/container.cpp
 
 HEADERS += \
         include/gui.hpp \
         include/mainwindow.hpp \
         include/label.hpp \
         include/transaction-counter.hpp \
-        include/transaction-pending-summary.hpp
+        include/transaction-pending-summary.hpp \
+    include/message.hpp \
+    include/container.hpp
 
 FORMS += \
         mainwindow.ui

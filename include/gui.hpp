@@ -4,11 +4,13 @@
 #include <string>
 #include <memory>
 #include <mutex>
+#include <array>
 #include <condition_variable>
 
 #include "label.hpp"
 #include "transaction-counter.hpp"
 #include "transaction-pending-summary.hpp"
+#include "message.hpp"
 
 class QLabel;
 class MainWindow;
@@ -34,6 +36,8 @@ public:
 
     TransactionCounter transactionCounter;
     TransactionPendingSummary transactionPendingSummary;
+
+    Message message;
 
     Gui();
     ~Gui();

@@ -21,7 +21,8 @@ Gui::Gui() : isStop(false),
              labelFletCode(),
              labelTerminalId(),
              transactionCounter(),
-             transactionPendingSummary()
+             transactionPendingSummary(),
+             message()
 {
 }
 
@@ -56,9 +57,20 @@ int Gui::begin(int argc, char **argv){
     this->transactionCounter.label.link(this->mwindow->labelTransactionCounter());
     this->transactionPendingSummary.label.link(this->mwindow->labelTransactionPendingSummary());
 
+    this->message.link(this->mwindow->containerMessage(),
+                       this->mwindow->containerMainInfo(),
+                       {
+                           this->mwindow->labelMessage0(),
+                           this->mwindow->labelMessage1(),
+                           this->mwindow->labelMessage2(),
+                           this->mwindow->labelMessage3(),
+                           this->mwindow->labelMessage4()
+                       });
+
     this->labelStatus.hide();
     this->labelCardNumber.hide();
     this->labelBalance.hide();
+    this->message.hide();
 
     this->mwindow->show();
 

@@ -49,13 +49,13 @@ void TransactionCounter::incTapInRegularCounter(){
 }
 
 void TransactionCounter::incTapInEconomicalCounter(){
-    this->setTapInRegularCounter(++(this->tapInEconomicalCounter));
+    this->setTapInEconomicalCounter(++(this->tapInEconomicalCounter));
 }
 
 void TransactionCounter::incTapInFreeCounter(){
-    this->setTapInRegularCounter(++(this->tapInFreeCounter));
+    this->setTapInFreeCounter(++(this->tapInFreeCounter));
 }
 
 void TransactionCounter::incTapOutCounter(){
-    this->setTapInRegularCounter(++(this->tapOutCounter));
+    this->setTapOutCounter(++(this->tapOutCounter));
 }

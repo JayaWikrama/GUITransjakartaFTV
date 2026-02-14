@@ -61,7 +61,7 @@ void Label::setRupiah(unsigned int value, const std::string &prefix, bool trigSh
     return this->setText(qtext, trigShow);
 }
 
-void Label::setPAN(unsigned int value, const std::string &prefix, bool trigShow) const {
+void Label::setPAN(unsigned long long value, const std::string &prefix, bool trigShow) const {
     QPointer<QLabel> slabel = label;
     QString padded = QString("%1").arg(value, 16, 10, QChar('0'));
     QString formated;

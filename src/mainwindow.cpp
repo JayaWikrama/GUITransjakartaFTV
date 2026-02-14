@@ -73,3 +73,31 @@ QLabel *MainWindow::labelFletCode() const {
 QLabel *MainWindow::labelTerminalId() const {
     return ui->label_terminal_id;
 }
+
+QLabel *MainWindow::labelMessage0() const {
+    return ui->label_message_0;
+}
+
+QLabel *MainWindow::labelMessage1() const {
+    return ui->label_message_1;
+}
+
+QLabel *MainWindow::labelMessage2() const {
+    return ui->label_message_2;
+}
+
+QLabel *MainWindow::labelMessage3() const {
+    return ui->label_message_3;
+}
+
+QLabel *MainWindow::labelMessage4() const {
+    return ui->label_message_4;
+}
+
+QWidget *MainWindow::containerMainInfo() const {
+    return ui->main_info_container;
+}
+
+QWidget *MainWindow::containerMessage() const {
+    return ui->message_container;
+}

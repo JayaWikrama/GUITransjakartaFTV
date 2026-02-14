@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QLabel>
 #include <QTimer>
+#include <QWidget>
 
 namespace Ui {
 class MainWindow;
@@ -27,6 +28,14 @@ public:
     QLabel *labelVersion() const;
     QLabel *labelFletCode() const;
     QLabel *labelTerminalId() const;
+    QLabel *labelMessage0() const;
+    QLabel *labelMessage1() const;
+    QLabel *labelMessage2() const;
+    QLabel *labelMessage3() const;
+    QLabel *labelMessage4() const;
+
+    QWidget *containerMainInfo() const;
+    QWidget *containerMessage() const;
 
 private:
     Ui::MainWindow *ui;
