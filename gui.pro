@@ -29,7 +29,8 @@ SOURCES += \
         src/transaction-counter.cpp \
         src/transaction-pending-summary.cpp \
     src/message.cpp \
-    src/container.cpp
+    src/container.cpp \
+    src/network-icon.cpp
 
 HEADERS += \
         include/gui.hpp \
@@ -38,10 +39,13 @@ HEADERS += \
         include/transaction-counter.hpp \
         include/transaction-pending-summary.hpp \
     include/message.hpp \
-    include/container.hpp
+    include/container.hpp \
+    include/network-icon.hpp
 
 FORMS += \
         mainwindow.ui
+
+RESOURCES += resources.qrc
 
 INCLUDEPATH += $$PWD/include
 

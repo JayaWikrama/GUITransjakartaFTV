@@ -94,6 +94,11 @@ QLabel *MainWindow::labelMessage4() const {
     return ui->label_message_4;
 }
 
+QLabel *MainWindow::labelNetworkIcon() const
+{
+    return ui->label_network_icon;
+}
+
 QWidget *MainWindow::containerMainInfo() const {
     return ui->main_info_container;
 }

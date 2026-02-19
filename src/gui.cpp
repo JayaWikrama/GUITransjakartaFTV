@@ -56,7 +56,7 @@ int Gui::begin(int argc, char **argv){
     this->labelTerminalId.link(this->mwindow->labelTerminalId());
     this->transactionCounter.label.link(this->mwindow->labelTransactionCounter());
     this->transactionPendingSummary.label.link(this->mwindow->labelTransactionPendingSummary());
-
+    this->gsmNetworkLevel.link(this->mwindow->labelNetworkIcon());
     this->message.link(this->mwindow->containerMessage(),
                        this->mwindow->containerMainInfo(),
                        {

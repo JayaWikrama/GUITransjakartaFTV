@@ -11,10 +11,9 @@
 #include "transaction-counter.hpp"
 #include "transaction-pending-summary.hpp"
 #include "message.hpp"
+#include "network-icon.hpp"
 
-class QLabel;
 class MainWindow;
-class Label;
 
 class Gui {
 private:
@@ -36,6 +35,8 @@ public:
 
     TransactionCounter transactionCounter;
     TransactionPendingSummary transactionPendingSummary;
+
+    NetworkIconManager gsmNetworkLevel;
 
     Message message;
 

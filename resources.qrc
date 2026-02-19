@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="">
+        <file>asset/icons/gsm-no-signal.png</file>
+        <file>asset/icons/gsm-weak-signal.png</file>
+        <file>asset/icons/gsm-quite-strong-signal.png</file>
+        <file>asset/icons/gsm-strong-signal.png</file>
+    </qresource>
+</RCC>

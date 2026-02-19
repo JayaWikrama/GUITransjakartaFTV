@@ -33,6 +33,7 @@ public:
     QLabel *labelMessage2() const;
     QLabel *labelMessage3() const;
     QLabel *labelMessage4() const;
+    QLabel *labelNetworkIcon() const;
 
     QWidget *containerMainInfo() const;
     QWidget *containerMessage() const;

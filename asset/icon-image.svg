@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="icon-image.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.2506844"
+     inkscape:cx="885.57566"
+     inkscape:cy="410.87519"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1771"
+       transform="matrix(0.44528616,0,0,0.44528616,123.19652,90.495135)"
+       inkscape:export-filename="/home/jayawikrama/MPayUI/gui/asset/icons/gsm-weak-signal.png"
+       inkscape:export-xdpi="12.651995"
+       inkscape:export-ydpi="12.651995">
+      <path
+         style="fill:#ffffff;stroke:#666666;stroke-width:1.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 12.236363,106.75171 172.11794,14.444039 V 107.39528 H 11.565264 Z"
+         id="path857" />
+      <path
+         style="fill:#666666;stroke:none;stroke-width:0.108364px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 11.645822,107.20981 77.127756,69.403794 V 107.47339 H 11.370963 Z"
+         id="path941" />
+    </g>
+    <g
+       id="g1937"
+       inkscape:export-filename="/home/jayawikrama/MPayUI/gui/asset/icons/gsm-no-signal.png"
+       inkscape:export-xdpi="12.651989"
+       inkscape:export-ydpi="12.651989">
+      <path
+         style="fill:#ffffff;stroke:#666666;stroke-width:0.563287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 127.14601,194.58157 71.19306,-41.10335 v 41.38992 h -71.49189 z"
+         id="path943" />
+      <path
+         id="rect967"
+         style="fill:#666666;stroke-width:0.273212"
+         d="m 151.42493,163.95339 c -0.003,-0.003 -0.007,-0.003 -0.01,0 l -9.22643,9.22642 -9.22642,-9.22642 c -0.003,-0.003 -0.007,-0.003 -0.01,0 l -6.24937,6.24936 c -0.003,0.003 -0.003,0.007 0,0.01 l 9.22643,9.22642 -9.22656,9.22656 c -0.003,0.003 -0.003,0.007 0,0.01 l 6.24936,6.24937 c 0.003,0.003 0.007,0.003 0.01,0 l 9.22656,-9.22656 9.22656,9.22656 c 0.003,0.003 0.007,0.003 0.01,0 l 6.24936,-6.24936 c 0.003,-0.003 0.003,-0.007 -1e-5,-0.01 l -9.22656,-9.22656 9.22643,-9.22642 c 0.003,-0.003 0.003,-0.007 0,-0.01 z" />
+    </g>
+    <g
+       id="g1767"
+       transform="matrix(0.44528616,0,0,0.44528616,123.19652,90.495135)"
+       inkscape:export-filename="/home/jayawikrama/MPayUI/gui/asset/icons/gsm-quite-strong-signal.png"
+       inkscape:export-xdpi="12.616915"
+       inkscape:export-ydpi="12.616915">
+      <path
+         style="fill:#ffffff;stroke:#666666;stroke-width:1.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 12.236363,3.0350326 172.11794,-89.272634 V 3.6786026 H 11.565264 Z"
+         id="path1074" />
+      <path
+         style="fill:#666666;stroke:none;stroke-width:0.18441px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 11.933293,3.2701326 123.36825,-61.06687 V 3.7186926 H 11.465547 Z"
+         id="path1076" />
+    </g>
+    <path
+       style="fill:#666666;stroke:#666666;stroke-width:0.563287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 128.6452,47.076785 199.83825,5.9734354 V 47.363355 h -71.49188 z"
+       id="path1080"
+       inkscape:export-filename="/home/jayawikrama/MPayUI/gui/asset/icons/gsm-strong-signal.png"
+       inkscape:export-xdpi="12.651987"
+       inkscape:export-ydpi="12.651987" />
+  </g>
+</svg>
