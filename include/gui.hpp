@@ -14,6 +14,7 @@
 #include "network-icon.hpp"
 
 class MainWindow;
+class QMainWindow;
 
 class Gui {
 private:
@@ -30,8 +31,9 @@ public:
     Label labelCardNumber;
     Label labelStatus;
     Label labelVersion;
-    Label labelFletCode;
+    Label labelFleetCode;
     Label labelTerminalId;
+    Label labelTerminalName;
 
     TransactionCounter transactionCounter;
     TransactionPendingSummary transactionPendingSummary;
@@ -48,6 +50,10 @@ public:
     int begin(int argc, char **argv);
 
     bool isStoped();
+
+    void setWindowBackground(bool show);
+
+    void setUnderMaintenance(bool show);
 };
 
 #endif

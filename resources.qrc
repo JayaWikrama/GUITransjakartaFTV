@@ -4,5 +4,6 @@
         <file>asset/icons/gsm-weak-signal.png</file>
         <file>asset/icons/gsm-quite-strong-signal.png</file>
         <file>asset/icons/gsm-strong-signal.png</file>
+        <file>asset/images/background.png</file>
     </qresource>
 </RCC>

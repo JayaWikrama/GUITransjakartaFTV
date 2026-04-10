@@ -157,7 +157,7 @@
          <font>
           <pointsize>22</pointsize>
           <weight>75</weight>
-          <italic>true</italic>
+          <italic>false</italic>
           <bold>true</bold>
          </font>
         </property>
@@ -172,7 +172,7 @@
          <font>
           <pointsize>22</pointsize>
           <weight>75</weight>
-          <italic>true</italic>
+          <italic>false</italic>
           <bold>true</bold>
          </font>
         </property>
@@ -536,6 +536,44 @@
            </property>
           </widget>
          </item>
+         <item>
+          <widget class="QLabel" name="label_app_version">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string>V : 010101</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="margin">
+            <number>3</number>
+           </property>
+           <property name="indent">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
        <item>
@@ -591,7 +629,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_app_version">
+          <widget class="QLabel" name="label_terminal_id">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -615,7 +653,7 @@
             <number>0</number>
            </property>
            <property name="text">
-            <string>V : 010101</string>
+            <string>00000000</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -686,42 +724,28 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_terminal_id">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>22</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="lineWidth">
-            <number>0</number>
-           </property>
-           <property name="text">
-            <string>00000000</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="margin">
+          <layout class="QVBoxLayout" name="vertical_terminal_info">
+           <property name="spacing">
             <number>3</number>
            </property>
-           <property name="indent">
-            <number>0</number>
-           </property>
-          </widget>
+           <item>
+            <widget class="QLabel" name="label_terminal_name">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>000000000</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </item>

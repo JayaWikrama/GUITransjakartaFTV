@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <iomanip>
+#include <QMetaObject>
 #include "gui.hpp"
 #include "mainwindow.hpp"
 #include "ui_mainwindow.h"
@@ -18,7 +19,7 @@ Gui::Gui() : isStop(false),
              labelCardNumber(),
              labelStatus(),
              labelVersion(),
-             labelFletCode(),
+             labelFleetCode(),
              labelTerminalId(),
              transactionCounter(),
              transactionPendingSummary(),
@@ -52,8 +53,9 @@ int Gui::begin(int argc, char **argv){
     this->labelCardNumber.link(this->mwindow->labelCardNumber());
     this->labelStatus.link(this->mwindow->labelStatus());
     this->labelVersion.link(this->mwindow->labelVersion());
-    this->labelFletCode.link(this->mwindow->labelFletCode());
+    this->labelFleetCode.link(this->mwindow->labelFleetCode());
     this->labelTerminalId.link(this->mwindow->labelTerminalId());
+    this->labelTerminalName.link(this->mwindow->labelTerminalName());
     this->transactionCounter.label.link(this->mwindow->labelTransactionCounter());
     this->transactionPendingSummary.label.link(this->mwindow->labelTransactionPendingSummary());
     this->gsmNetworkLevel.link(this->mwindow->labelNetworkIcon());
@@ -98,4 +100,51 @@ int Gui::begin(int argc, char **argv){
 bool Gui::isStoped(){
     std::lock_guard<std::mutex> guard(this->mtx);
     return this->isStop;
+}
+
+void Gui::setWindowBackground(bool show) {
+    QMainWindow* window = mwindow.get();
+    if (!window)
+        return;
+
+    QPointer<QMainWindow> safeWindow = window;
+
+    QTimer::singleShot(0, window, [safeWindow, show]() {
+        if (!safeWindow)
+            return;
+
+        QWidget* central = safeWindow->centralWidget();
+        if (!central)
+            return;
+
+        if (show) {
+            central->setStyleSheet(
+                "#main_container {"
+                "background-image: url(\":/asset/images/background.png\");"
+                "background-repeat: no-repeat;"
+                "background-position: center;"
+                "}"
+            );
+        }
+        else {
+            central->setStyleSheet("");
+        }
+    });
+}
+
+void Gui::setUnderMaintenance(bool show)
+{
+    this->message.hide();
+    if (show){
+        this->message.show({"DEVICE",
+                            "UNDER MAINTENANCE",
+                            "",
+                            "",
+                            ""});
+        this->setWindowBackground(true);
+    }
+    else {
+        this->setWindowBackground(false);
+        this->message.hide();
+    }
 }

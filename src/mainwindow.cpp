@@ -27,7 +27,7 @@ void MainWindow::updateTime()
     QDate currentDate = QDate::currentDate();
     QTime currentTime = QTime::currentTime();
 
-    QString dateText = currentDate.toString("yyyy-MM-dd");
+    QString dateText = currentDate.toString("dd-MM-yyyy");
     QString timeText = currentTime.toString("HH:mm:ss");
 
     ui->label_date->setText(dateText);
@@ -66,12 +66,16 @@ QLabel *MainWindow::labelVersion() const {
     return ui->label_app_version;
 }
 
-QLabel *MainWindow::labelFletCode() const {
+QLabel *MainWindow::labelFleetCode() const {
     return ui->label_fleet_code;
 }
 
 QLabel *MainWindow::labelTerminalId() const {
     return ui->label_terminal_id;
+}
+
+QLabel *MainWindow::labelTerminalName() const {
+    return ui->label_terminal_name;
 }
 
 QLabel *MainWindow::labelMessage0() const {

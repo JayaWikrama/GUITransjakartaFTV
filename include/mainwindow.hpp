@@ -26,8 +26,9 @@ public:
     QLabel *labelTransactionCounter() const;
     QLabel *labelTransactionPendingSummary() const;
     QLabel *labelVersion() const;
-    QLabel *labelFletCode() const;
+    QLabel *labelFleetCode() const;
     QLabel *labelTerminalId() const;
+    QLabel *labelTerminalName() const;
     QLabel *labelMessage0() const;
     QLabel *labelMessage1() const;
     QLabel *labelMessage2() const;
